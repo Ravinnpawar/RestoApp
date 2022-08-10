@@ -1,6 +1,9 @@
 package com.ravindra.restoapp.ui.home
 
-import androidx.compose.foundation.*
+import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
@@ -20,8 +23,6 @@ import androidx.navigation.NavController
 import coil.compose.rememberImagePainter
 import com.ravindra.restoapp.data.Restaurants
 import com.ravindra.restoapp.ui.theme.Purple200
-import com.ravindra.restoapp.ui.theme.graySurface
-import kotlin.reflect.KFunction1
 
 @Composable
 fun TopStoriesScreen(
